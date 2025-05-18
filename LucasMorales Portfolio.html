@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio - Lucas</title>
+    <link rel="icon" href="assets/icon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <nav id="navbar-body" class="navbar fixed-top navbar-expand-lg">
+      <div class="container-fluid d-flex align-items-center justify-content-between">
+        <a class="navbar-brand" href="LucasMorales Portfolio.html">
+          <img src="assets/icon.png" class="img-fluid" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      
+        <!-- contenido colapsable -->
+      <div class="collapse navbar-collapse w-50" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <a class="nav-link active" href="">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="">Sobre mi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="">Formación</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+
+    <div data-bs-spy="scroll" data-bs-target="#navbar-body" data-bs-offset="0" class="scrollspy" tabindex="0">
+      <!-- Inicio -->
+      <div id="scrollspyInicio" class="seccion-inicio d-flex align-items-center justify-content-center">
+        <!-- Fondo parallax con Rellax -->
+        <div class="rellax fondo-parallax" data-rellax-speed="-2"></div>
+      
+        <!-- Filtro oscuro -->
+        <div class="overlay"></div>
+      
+        <!-- Texto -->
+        <div class="texto-superpuesto text-white text-center">
+          <h1>¡Bienvenido a mi portfolio!</h1>
+          <div class="texto">
+          <h2 class="LucasMorales fw-bold">Lucas Morales</h2>
+          </div>
+          <h3 class="titulo"><span class="typed"></span></h3>
+        </div>
+      </div>
+
+
+      <!-- Sobre mi -->
+      <div id="scrollspySobremi">Sobre mi</div>
+
+
+      <!-- Habilidades -->
+      <div id="scrollspyHabilidades">Habilidades</div>
+ 
+
+      <!-- Experiencia -->
+      <div id="scrollspyExperiencia">Experiencia</div>
+
+
+      <!-- Formacion -->
+      <div id="scrollspyFormacion">Formación</div>
+
+
+    </div>
+
+  <!-- script del texto dinamico-->
+  <script src="js/main.js"></script>
+
+  <!-- script para calcular el navbar -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const navbar = document.querySelector('.navbar');
+      const body = document.body;
+      if (navbar) {
+        body.style.paddingTop = `${navbar.offsetHeight}px`;
+      }
+    });
+  </script>
+
+  <!-- script scroll mejorado -->
+  <script src="https://cdn.jsdelivr.net/npm/rellax@1.12.1/rellax.min.js"></script>
+  <script>
+    new Rellax('.rellax', {
+      speed: -2, // velocidad negativa: el fondo se mueve más lento
+      center: true
+    });
+  </script>
+
+  <!-- scroll navbar color -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const navbar = document.querySelector('.navbar');
+  
+      const handleNavbarStyle = () => {
+        if (window.scrollY === 0) {
+          navbar.classList.remove('navbar-transparent');
+          navbar.classList.add('navbar-solid');
+        } else {
+          navbar.classList.remove('navbar-solid');
+          navbar.classList.add('navbar-transparent');
+        }
+      };
+  
+      // Inicializar estilo según posición inicial
+      handleNavbarStyle();
+  
+      // Ejecutar en cada scroll
+      window.addEventListener('scroll', handleNavbarStyle);
+    });
+  </script>
+</body>
+</html>
+

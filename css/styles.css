@@ -1,0 +1,104 @@
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    font-family: 'Poppins', sans-serif;
+  }
+.scrollspy {
+  padding-top: 0; /* evitamos espacio arriba si no es necesario */
+}
+  /* Navbar */
+  /* Tamaño y comportamiento del logo */
+  .navbar-brand img {
+    max-height: 80px;
+    height: auto;
+    width: auto;
+  }
+  /* Ícono del botón hamburguesa */
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,0.9%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  .nav-link {
+    color: white !important;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+  .navbar-nav .nav-link.active.nav-pills {
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+  .navbar-nav .nav-link.active {
+    background-color: #494949;
+    color: white !important;
+  }
+  /* Estado inicial: navbar sólido (negro) */
+  .navbar-solid {
+    background-color: #0c0e0f !important; /* negro opaco */
+    transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
+    backdrop-filter: none;
+  }
+
+  /* Al hacer scroll: translúcido con blur */
+  .navbar-transparent {
+    background-color: rgba(0, 0, 0, 0.4) !important; /* oscuro translúcido */
+    backdrop-filter: blur(8px); /* efecto desenfoque */
+    transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
+  }
+  
+  /* Sección Inicio con Parallax */
+  .seccion-inicio {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Fondo con parallax */
+  .fondo-parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130%; /* más alto para permitir movimiento */
+    background-image: url('../assets/inicio.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  }
+  
+  /* Filtro oscuro */
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  /* Texto encima del fondo */
+  .texto-superpuesto {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  }
+
+  .LucasMorales{
+    color: rgba(66, 178, 46, 0.753);
+  }
+  
+  /* Tipado dinámico */
+  .typed {
+    font-weight: bold;
+  }
+  
+  /* Evita scroll horizontal */
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
