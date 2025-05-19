@@ -27,13 +27,10 @@ body {
   .navbar-brand {
     font-size: 1.3rem;
   }
-  .navbar-nav .nav-link.active.nav-pills {
+  .navbar-nav .nav-link.active {
     transition: background-color 0.3s ease;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  }
-  .navbar-nav .nav-link.active {
-    background-color: #494949;
-    color: white !important;
+        font-weight: bold;
   }
   /* Estado inicial: navbar sólido (negro) */
   .navbar-solid {
@@ -100,5 +97,57 @@ body {
   html, body {
     max-width: 100%;
     overflow-x: hidden;
+    background-color: #0c0e0f;
   }
   
+  /* Sobre mi */
+ .img-perfil {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 3px solid #42b22e;
+  }
+
+  .sobre-mi {
+    background-color: #121212;
+    color: #fff;
+  }
+
+  .sobre-mi h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #42b22e;
+  }
+
+  .sobre-mi p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .sobre-mi .btn {
+    font-weight: 500;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+
+  .btn-hover:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+
+  @media (max-width: 767px) {
+    .sobre-mi .text-md-end {
+      text-align: center !important;
+    }
+  }
+  .highlight {
+      color: #42b22e; 
+      font-weight: bold;
+  }
+  #texto-sobremi{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+  }
+
