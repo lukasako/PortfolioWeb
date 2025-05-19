@@ -1,4 +1,15 @@
 /* General */
+section {
+  min-height: 100vh;
+  scroll-margin-top: 80px;
+}
+[data-bs-spy="scroll"] {
+  position: relative;
+}
+/* Aplica padding-top solo a las secciones que no son la de inicio */
+section:not(.seccion-inicio) {
+  padding-top: 80px;
+}
 body {
     margin: 0;
     padding: 0;
@@ -8,8 +19,42 @@ body {
 .scrollspy {
   padding-top: 0; /* evitamos espacio arriba si no es necesario */
 }
+
   /* Navbar */
   /* Tamaño y comportamiento del logo */
+  /* Navbar ítems centrados y sin bordes ni sombras */
+.navbar-nav .nav-link {
+  color: white !important;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+/* Efecto de resaltado al pasar por sección (scrollspy) */
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #42b22e !important;
+  text-shadow: 0 0 8px rgba(66, 178, 46, 0.8);
+}
+
+/* Suave efecto hover */
+.navbar-nav .nav-link:hover {
+  color: #42b22e !important;
+}
+
+/* Para centrar los ítems correctamente incluso en colapso */
+.navbar-collapse {
+  justify-content: center;
+}
+
+/* Responsive: centrar ítems en mobile */
+@media (max-width: 991px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+}
+
   .navbar-brand img {
     max-height: 80px;
     height: auto;
