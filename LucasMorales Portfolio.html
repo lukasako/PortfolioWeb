@@ -45,6 +45,7 @@
 
   <!-- comienzan las secciones -->
     <div data-bs-spy="scroll" data-bs-target="#navbar-body" data-bs-offset="80" tabindex="0"  style="position: relative;">
+      
       <!-- Inicio -->
       <section id="scrollspyInicio" class="scrollspy-section seccion-inicio d-flex align-items-center justify-content-center">
         <!-- Fondo parallax con Rellax -->
@@ -60,10 +61,13 @@
           <h2 class="LucasMorales fw-bold">Lucas Morales</h2>
           </div>
           <h3 class="titulo"><span class="typed"></span></h3>
+          <a href="mailto:lucasmoralesar@gmail.com" class="btn btn-dark btn-hover" style="margin-top: 20%;">
+            Contacto
+          </a>
         </div>
       </section>
 
-
+      
       <!-- Sobre mi -->
       <section id="scrollspySobremi" class="scrollspy-section sobre-mi py-5">
         <div class="row align-items-center">
@@ -87,7 +91,7 @@
               </p>
 
               <div class="d-flex flex-wrap gap-3 mt-4">
-                <a href="assets/CV_LucasMorales-CV.pdf" class="btn btn-outline-success btn-hover" download>
+                <a href="assets/LucasMorales-CV.pdf" class="btn btn-outline-success btn-hover" download>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
                     <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
                     <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
@@ -116,8 +120,102 @@
 
 
       <!-- Habilidades -->
-      <section id="scrollspyHabilidades" class="scrollspy-section">Habilidades</section>
- 
+      <section id="scrollspyHabilidades" class="scrollspy-section habilidades py-16 dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 habilidades">
+          <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-10">Habilidades Técnicas</h2>
+          <!-- Carrusel Habilidades Técnicas -->
+          <div class="relative">
+            <button class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-200 dark:bg-gray-700 p-2 rounded-full shadow-md" id="prev-tech">
+              &#10094;
+            </button>
+            <div class="overflow-hidden">
+              <div id="tech-carousel" class="flex transition-transform duration-500 gap-4">
+                <!-- Cartas técnicas -->
+                <div class="min-w-[250px] bg-gray-100 dark:bg-gray-800 rounded-xl p-4 shadow-md text-center">
+                  <img src="assets/icone-html-orange.png" alt="HTML" class="w-24 h-24 mx-auto mb-4 object-contain">
+                  <h3 class="text-xl font-semibold text-gray-800 dark:text-white">HTML</h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-300">Lenguaje de marcado para crear estructuras web.</p>
+                </div>
+                <div class="min-w-[250px] bg-gray-100 dark:bg-gray-800 rounded-xl p-4 shadow-md text-center">
+                  <img src="assets/icone-css-blue.png" alt="CSS" class="w-24 h-24 mx-auto mb-4 object-contain">
+                  <h3 class="text-xl font-semibold text-gray-800 dark:text-white">CSS</h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-300">Estilos para diseño y presentación visual.</p>
+                </div>
+                <div class="min-w-[250px] bg-gray-100 dark:bg-gray-800 rounded-xl p-4 shadow-md text-center">
+                  <img src="assets/icone-sql-blue.png" alt="SQL" class="w-24 h-24 mx-auto mb-4 object-contain">
+                  <h3 class="text-xl font-semibold text-gray-800 dark:text-white">SQL</h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-300">Lenguaje para gestión de bases de datos.</p>
+                </div>
+                <div class="min-w-[250px] bg-gray-100 dark:bg-gray-800 rounded-xl p-4 shadow-md text-center">
+                  <img src="assets/icones-js-yellow.png" alt="JavaScript" class="w-24 h-24 mx-auto mb-4 object-contain">
+                  <h3 class="text-xl font-semibold text-gray-800 dark:text-white">JavaScript</h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-300">Lenguaje de programación web dinámico.</p>
+                </div>
+                <div class="min-w-[250px] bg-gray-100 dark:bg-gray-800 rounded-xl p-4 shadow-md text-center">
+                  <img src="assets/icone-java-blue.png" alt="Java" class="w-24 h-24 mx-auto mb-4 object-contain">
+                  <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Java</h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-300">Lenguaje orientado a objetos y multiplataforma.</p>
+                </div>
+                <div class="min-w-[250px] bg-gray-100 dark:bg-gray-800 rounded-xl p-4 shadow-md text-center">
+                  <img src="..." alt="PHP" class="w-24 h-24 mx-auto mb-4 object-contain">
+                  <h3 class="text-xl font-semibold text-gray-800 dark:text-white">PHP</h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-300">Lenguaje para desarrollo web del lado del servidor.</p>
+                </div>
+                <div class="min-w-[250px] bg-gray-100 dark:bg-gray-800 rounded-xl p-4 shadow-md text-center">
+                  <img src="..." alt="Documentación Técnica" class="w-24 h-24 mx-auto mb-4 object-contain">
+                  <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Documentación Técnica</h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-300">Creación de documentación clara y estructurada.</p>
+                </div>
+                <div class="min-w-[250px] bg-gray-100 dark:bg-gray-800 rounded-xl p-4 shadow-md text-center">
+                  <img src="/images/reparacion.png" alt="Reparación HW y SW" class="w-24 h-24 mx-auto mb-4 object-contain">
+                  <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Reparación HW/SW</h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-300">Diagnóstico y solución de problemas técnicos.</p>
+                </div>
+              </div>
+            </div>
+            <button class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-200 dark:bg-gray-700 p-2 rounded-full shadow-md" id="next-tech">
+              &#10095;
+            </button>
+          </div>
+
+          <!-- Habilidades Blandas -->
+          <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white my-10">Habilidades Blandas</h2>
+          <div class="relative">
+            <button class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-200 dark:bg-gray-700 p-2 rounded-full shadow-md" id="prev-soft">
+              &#10094;
+            </button>
+            <div class="overflow-hidden">
+              <div id="soft-carousel" class="flex transition-transform duration-500 gap-6">
+                <div class="min-w-[150px] flex flex-col items-center text-center">
+                  <img src="/images/empatia.png" alt="Empatía" class="w-24 h-24 rounded-full object-cover mb-2">
+                  <h3 class="text-lg font-medium text-gray-800 dark:text-white">Empatía</h3>
+                </div>
+                <div class="min-w-[150px] flex flex-col items-center text-center">
+                  <img src="/images/comunicacion.png" alt="Comunicación" class="w-24 h-24 rounded-full object-cover mb-2">
+                  <h3 class="text-lg font-medium text-gray-800 dark:text-white">Comunicación</h3>
+                </div>
+                <div class="min-w-[150px] flex flex-col items-center text-center">
+                  <img src="/images/equipo.png" alt="Trabajo en equipo" class="w-24 h-24 rounded-full object-cover mb-2">
+                  <h3 class="text-lg font-medium text-gray-800 dark:text-white">Trabajo en equipo</h3>
+                </div>
+                <div class="min-w-[150px] flex flex-col items-center text-center">
+                  <img src="/images/pensamiento.png" alt="Pensamiento crítico" class="w-24 h-24 rounded-full object-cover mb-2">
+                  <h3 class="text-lg font-medium text-gray-800 dark:text-white">Pensamiento crítico</h3>
+                </div>
+                <div class="min-w-[150px] flex flex-col items-center text-center">
+                  <img src="/images/gestion.png" alt="Gestión del tiempo" class="w-24 h-24 rounded-full object-cover mb-2">
+                  <h3 class="text-lg font-medium text-gray-800 dark:text-white">Gestión del tiempo</h3>
+                </div>
+              </div>
+            </div>
+            <button class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-200 dark:bg-gray-700 p-2 rounded-full shadow-md" id="next-soft">
+              &#10095;
+            </button>
+          </div>
+        </div>
+      </section>
+
+
 
       <!-- Experiencia -->
       <section id="scrollspyExperiencia" class="scrollspy-section">Experiencia</section>
@@ -209,6 +307,33 @@
       });
     });
   </script>
+
+  <!-- seccion habilidades -->
+    <script>
+      const techCarousel = document.getElementById('tech-carousel');
+      const softCarousel = document.getElementById('soft-carousel');
+
+      let techScroll = 0;
+      let softScroll = 0;
+
+      document.getElementById('prev-tech').onclick = () => {
+        techScroll -= 270;
+        techCarousel.style.transform = `translateX(-${techScroll}px)`;
+      };
+      document.getElementById('next-tech').onclick = () => {
+        techScroll += 270;
+        techCarousel.style.transform = `translateX(-${techScroll}px)`;
+      };
+
+      document.getElementById('prev-soft').onclick = () => {
+        softScroll -= 170;
+        softCarousel.style.transform = `translateX(-${softScroll}px)`;
+      };
+      document.getElementById('next-soft').onclick = () => {
+        softScroll += 170;
+        softCarousel.style.transform = `translateX(-${softScroll}px)`;
+      };
+    </script>
 </body>
 <!-- 
    __       _                   _         

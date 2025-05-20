@@ -180,6 +180,7 @@ body {
   .btn-hover:hover {
     transform: scale(1.05);
     opacity: 0.9;
+    transition: all 0.3s ease;
   }
 
   @media (max-width: 767px) {
@@ -196,3 +197,14 @@ body {
     font-size: larger;
   }
 
+
+/* habilidades */
+  .habilidades {
+    background-color: #121212;
+    color: #fff;
+  } 
+  .btn-hover:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
