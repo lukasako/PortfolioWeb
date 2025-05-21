@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio - Lucas</title>
+    <link rel="icon" href="assets/icon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <!-- navbar -->
+  <nav id="navbar-body" class="navbar fixed-top navbar-expand-lg navbar-dark navbar-solid" style="background-color: #0c0e0f;">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyInicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspySobremi">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHabilidades">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyExperiencia">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyFormacion">Formación</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- comienzan las secciones -->
+    <div data-bs-spy="scroll" data-bs-target="#navbar-body" data-bs-offset="80" tabindex="0"  style="position: relative;">
+      
+      <!-- Inicio -->
+      <section id="scrollspyInicio" class="scrollspy-section seccion-inicio d-flex align-items-center justify-content-center">
+        <!-- Fondo parallax con Rellax -->
+        <div class="rellax fondo-parallax" data-rellax-speed="-2"></div>
+      
+        <!-- Filtro oscuro -->
+        <div class="overlay"></div>
+      
+        <!-- Texto -->
+        <div class="texto-superpuesto text-white text-center">
+          <h1>¡Bienvenido a mi portfolio!</h1>
+          <div class="texto">
+          <h2 class="LucasMorales fw-bold">Lucas Morales</h2>
+          </div>
+          <h3 class="titulo"><span class="typed"></span></h3>
+          <a href="mailto:lucasmoralesar@gmail.com" class="btn btn-dark btn-hover" style="margin-top: 20%;">
+            Contacto
+          </a>
+        </div>
+      </section>
+
+      
+      <!-- Sobre mi -->
+      <section id="scrollspySobremi" class="scrollspy-section sobre-mi py-5">
+        <div class="row align-items-center">
+          <!-- Foto personal -->
+          <div class="col-md-4 text-center mb-4 mb-md-0">
+            <img src="assets/pf.jpg" alt="Foto de Lucas Morales" class="img-fluid rounded shadow img-perfil">
+          </div>
+
+          <!-- Texto y botones -->
+          <div class="col-md-7">
+            <div class="col-12">
+              <h2 class="display-4 titulos mb-3">Sobre mí</h2>
+            </div>
+              <p id="texto-sobremi">               
+                Hola! soy <span class="highlight">Lucas</span>, te invito a que me conozcas mejor <br> 
+                Actualmente estoy ocupando la posición de <span class="highlight">Consultor Junior</span> 
+                sobre productos de software enfocados al <span class="highlight">Respaldo de Datos Sensibles y Automatización de Test Funcionales</span> 
+                en DevOps. Además me encuentro estudiando la carrera de <span class="highlight">Analista de Sistemas</span>. 
+                <br>Esta combinación, junto a una gran pasión por la <span class="highlight">tecnología</span>, 
+                el <span class="highlight">desarrollo</span> y la <span class="highlight">resolución</span> 
+                de problemas, me permite tener una visión integral de los desafíos actuales.<br> Me considero una persona comprometida, autodidacta y me gusta encarar nuevos desafíos profesionales en mi carrera.
+                <br> Si queres <span class="highlight">saber más</span> seguí scrolleando o también te dejo unos links aca abajo           
+              </p>
+
+              <div class="d-flex flex-wrap gap-3 mt-4">
+                <a href="assets/LucasMorales-CV.pdf" class="btn btn-outline-success btn-hover" download>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+                  </svg>
+                  Descargar CV
+                </a>
+
+                <a href="https://github.com/lukasako" target="_blank" class="btn btn-outline-light btn-hover">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                  </svg>
+                  Github
+                </a>
+
+                <a href="https://www.linkedin.com/in/lucas-morales-in/" target="_blank" class="btn btn-outline-primary btn-hover">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                  </svg>
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+        </div>
+      </section>
+
+
+      <!-- Habilidades -->
+      <section id="scrollspyHabilidades" class="scrollspy-section habilidades">
+        <div class="container">
+          <div class="row mb-3">
+            <div class="col-12 text-center">
+              <h2 class="display-4 titulos">Habilidades</h2>
+              <p class="text-white">Mis conocimientos y tecnologías que manejo</p>
+            </div>
+          </div>  
+          
+        <!-- habilidades tecnicas -->
+          <div class="col-12 text-center">
+              <h3 class="display-8 titulos">Técnicas</h3>
+          </div>
+          <div class="carousel-container position-relative">
+            <!-- Flechas de navegación (solo visibles en desktop) -->
+            <div class="carousel-arrows d-none d-md-block">
+              <button class="carousel-arrow prev-arrow" aria-label="Anterior">
+                <i class="bi bi-arrow-left-circle"></i>
+              </button>
+              <button class="carousel-arrow next-arrow" aria-label="Siguiente">
+                <i class="bi bi-arrow-right-circle"></i>
+              </button>
+            </div>
+            
+            <!-- Carrusel de habilidades -->
+            <div class="skills-carousel">
+              <!-- Slide 1: HTML y CSS -->
+              <div class="skill-slide">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="skill-item">
+                      <div class="skill-content">
+                        <div class="skill-icon">
+                          <img src="assets/icone-html-orange.png" alt="HTML" class="img-fluid">
+                        </div>
+                        <h3 class="skill-title">HTML</h3>
+                        <p class="skill-desc">Estructuración semántica de contenido web con HTML5</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-item">
+                      <div class="skill-content">
+                        <div class="skill-icon">
+                          <img src="assets/icone-css-blue.png" alt="CSS" class="img-fluid">
+                        </div>
+                        <h3 class="skill-title">CSS</h3>
+                        <p class="skill-desc">Diseño y estilizado avanzado con CSS3 y preprocesadores</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Slide 2: PHP y SQL -->
+              <div class="skill-slide">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="skill-item">
+                      <div class="skill-content">
+                        <div class="skill-icon">
+                          <img src="assets/icone-php-violet.png" alt="PHP" class="img-fluid">
+                        </div>
+                        <h3 class="skill-title">PHP</h3>
+                        <p class="skill-desc">Desarrollo back-end y aplicaciones dinámicas en PHP</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-item">
+                      <div class="skill-content">
+                        <div class="skill-icon">
+                          <img src="assets/icone-sql-blue.png" alt="SQL" class="img-fluid">
+                        </div>
+                        <h3 class="skill-title">SQL</h3>
+                        <p class="skill-desc">Gestión y optimización de bases de datos relacionales</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Slide 3: Documentación y Java -->
+              <div class="skill-slide">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="skill-item">
+                      <div class="skill-content">
+                        <div class="skill-icon">
+                          <img src="assets/icone-doc-black.png" alt="Documentación Técnica" class="img-fluid">
+                        </div>
+                        <h3 class="skill-title">Documentación Técnica</h3>
+                        <p class="skill-desc">Creación de manuales y documentación profesional</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-item">
+                      <div class="skill-content">
+                        <div class="skill-icon">
+                          <img src="assets/icone-java-blue.png" alt="Java" class="img-fluid">
+                        </div>
+                        <h3 class="skill-title">Java</h3>
+                        <p class="skill-desc">Desarrollo de aplicaciones con Java</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Slide 4: Reparación SW/HW y JavaScript -->
+              <div class="skill-slide">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="skill-item">
+                      <div class="skill-content">
+                        <div class="skill-icon">
+                          <img src="assets/icone-reparacion-blue.png" alt="Reparación SW y HW" class="img-fluid">
+                        </div>
+                        <h3 class="skill-title">Reparación SW y HW</h3>
+                        <p class="skill-desc">Solución de problemas de software y hardware</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-item">
+                      <div class="skill-content">
+                        <div class="skill-icon">
+                          <img src="assets/icones-js-yellow.png" alt="JavaScript" class="img-fluid">
+                        </div>
+                        <h3 class="skill-title">JavaScript</h3>
+                        <p class="skill-desc">Creación de interacciones dinámicas y funcionalidades web</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Indicadores de slide (puntos) -->
+            <div class="carousel-indicators">
+              <div class="dots-container">
+                <!-- Los puntos se generan dinámicamente con JavaScript -->
+              </div>
+            </div>
+          </div>
+
+        <!-- Habilidades blandas -->
+          <div class="col-12 text-center">
+              <h3 class="display-8 titulos mt-5">Blandas</h3>
+          </div>
+          <div class="carousel-container position-relative">
+            <!-- Flechas de navegación (solo visibles en desktop) -->
+            <div class="carousel-arrows d-none d-md-block">
+              <button class="carousel-arrow prev-arrow" aria-label="Anterior">
+                <i class="bi bi-arrow-left-circle"></i>
+              </button>
+              <button class="carousel-arrow next-arrow" aria-label="Siguiente">
+                <i class="bi bi-arrow-right-circle"></i>
+              </button>
+            </div>
+            
+            <!-- Carrusel de habilidades -->
+            <div class="skills-carousel">
+              <!-- Slide 1: HTML y CSS -->
+              <div class="skill-slide">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="skill-item">
+                      <div class="skill-content">
+                        <div class="skill-icon">
+                          <img src="assets/equipo.png" alt="Trabajo en equipo" class="img-fluid">
+                        </div>
+                        <h3 class="skill-title">Trabajo en equipo</h3>
+                        <p class="skill-desc">Disposición a compartir ideas, conocimientos y tareas, y la capacidad de trabajar en conjunto hacia un objetivo común</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-item">
+                      <div class="skill-content">
+                        <div class="skill-icon">
+                          <img src="assets/empatia.png" alt="Empatía" class="img-fluid">
+                        </div>
+                        <h3 class="skill-title">Empatía</h3>
+                        <p class="skill-desc">Busco entender las perspectivas y sentimientos del otro, así como la escucha activa, y facilitar la colaboración</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Slide 2: PHP y SQL -->
+              <div class="skill-slide">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="skill-item">
+                      <div class="skill-content">
+                        <div class="skill-icon">
+                          <img src="assets/comunicacion.png" alt="comunicacion" class="img-fluid">
+                        </div>
+                        <h3 class="skill-title">Comunicación</h3>
+                        <p class="skill-desc">Practico transmitir información clara y concisa, creo que es fundamental para el buen funcionamiento del equipo</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-item">
+                      <div class="skill-content">
+                        <div class="skill-icon">
+                          <img src="assets/gestion.png" alt="Gestion del tiempo" class="img-fluid">
+                        </div>
+                        <h3 class="skill-title">Gestión del tiempo</h3>
+                        <p class="skill-desc">Trabajo mi capacidad de priorizar tareas, organizar el trabajo y cumplir con los plazos</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Slide 3: Documentación y Java -->
+              <div class="skill-slide">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="skill-item">
+                      <div class="skill-content">
+                        <div class="skill-icon">
+                          <img src="assets/pensamiento.png" alt="Pensamiento Critico" class="img-fluid">
+                        </div>
+                        <h3 class="skill-title">Pensamiento crítico</h3>
+                        <p class="skill-desc">Priorizo analizar la información, identificar problemas y proponer soluciones</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-item">
+                      <div class="skill-content">
+                        <div class="skill-icon">
+                          <img src="assets/etica.png" alt="Etica" class="img-fluid">
+                        </div>
+                        <h3 class="skill-title">Ética de trabajo</h3>
+                        <p class="skill-desc">Me considero una persona confiable, busco cumplir con mis responsabilidades y mantener una actitud profesional</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Indicadores de slide (puntos) -->
+            <div class="carousel-indicators">
+              <div class="dots-container">
+                <!-- Los puntos se generan dinámicamente con JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+
+
+
+
+      <!-- Experiencia -->
+      <section id="scrollspyExperiencia" class="scrollspy-section">Experiencia</section>
+
+
+      <!-- Formacion -->
+      <section id="scrollspyFormacion" class="scrollspy-section">Formación</section>
+
+
+    </div>
+
+<!-- Scripts Necesarios -->
+
+  <!-- script del texto dinamico-->
+  <script src="js/main.js"></script>
+
+  <!-- forzar scrollspy -->
+  <script>
+    var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+      target: '#navbar-body',
+      offset: 80
+    });
+  </script> 
+
+  <!-- script para calcular el navbar -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const navbar = document.querySelector('.navbar');
+      const body = document.body;
+      if (navbar) {
+        body.style.paddingTop = `${navbar.offsetHeight}px`;
+      }
+    });
+  </script>
+
+  <!-- script scroll mejorado -->
+  <script src="https://cdn.jsdelivr.net/npm/rellax@1.12.1/rellax.min.js"></script>
+  <script>
+    new Rellax('.rellax', {
+      speed: -2, // velocidad negativa: el fondo se mueve más lento
+      center: true
+    });
+  </script>
+
+  <!-- scroll navbar color -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const navbar = document.querySelector('.navbar');
+  
+      const handleNavbarStyle = () => {
+        if (window.scrollY === 0) {
+          navbar.classList.remove('navbar-transparent');
+          navbar.classList.add('navbar-solid');
+        } else {
+          navbar.classList.remove('navbar-solid');
+          navbar.classList.add('navbar-transparent');
+        }
+      };
+  
+      // Inicializar estilo según posición inicial
+      handleNavbarStyle();
+  
+      // Ejecutar en cada scroll
+      window.addEventListener('scroll', handleNavbarStyle);
+    });
+  </script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Inicializar el ScrollSpy con las opciones correctas
+      var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: '#navbar-body',
+        offset: 80
+      });
+      
+      // Forzar la activación de la sección de inicio al cargar la página
+      document.querySelector('#navbar-body .navbar-nav .nav-item:first-child .nav-link').classList.add('active');
+      
+      // Opcional: desactivar cualquier otra sección que esté activa al inicio
+      document.querySelectorAll('#navbar-body .navbar-nav .nav-item:not(:first-child) .nav-link.active').forEach(function(el) {
+        el.classList.remove('active');
+      });
+      
+      // Escuchar el evento scroll para permitir que ScrollSpy funcione normalmente después
+      let hasScrolled = false;
+      window.addEventListener('scroll', function() {
+        if (!hasScrolled) {
+          hasScrolled = true;
+          // Permitir que Bootstrap ScrollSpy tome el control después del primer scroll
+        }
+      });
+    });
+  </script>
+
+  <!-- script seccion habilidades -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    // Seleccionamos ambos carruseles y sus controles
+    const carouselContainers = document.querySelectorAll('.carousel-container');
+    
+    // Procesamos cada carrusel de forma independiente
+    carouselContainers.forEach((container, containerIndex) => {
+      const carousel = container.querySelector('.skills-carousel');
+      const prevArrow = container.querySelector('.prev-arrow');
+      const nextArrow = container.querySelector('.next-arrow');
+      const skillSlides = container.querySelectorAll('.skill-slide');
+      const dotsContainer = container.querySelector('.dots-container');
+      
+      let currentIndex = 0;
+      let autoSlideInterval;
+
+      // Crear indicadores (puntos) para este carrusel específico
+      function createDots() {
+        // Limpiamos los puntos existentes para evitar duplicados
+        dotsContainer.innerHTML = '';
+        
+        skillSlides.forEach((_, index) => {
+          const dot = document.createElement('div');
+          dot.classList.add('dot');
+          if (index === 0) dot.classList.add('active');
+          dot.addEventListener('click', () => {
+            goToSlide(index);
+            resetAutoSlide();
+          });
+          dotsContainer.appendChild(dot);
+        });
+      }
+      
+      // Actualizar los indicadores
+      function updateDots() {
+        const dots = dotsContainer.querySelectorAll('.dot');
+        dots.forEach((dot, index) => {
+          if (index === currentIndex) {
+            dot.classList.add('active');
+          } else {
+            dot.classList.remove('active');
+          }
+        });
+      }
+      
+      // Ir a un slide específico
+      function goToSlide(index) {
+        currentIndex = index;
+        updateCarouselPosition();
+        updateDots();
+      }
+      
+      // Navegar al siguiente slide
+      function nextSlide() {
+        if (currentIndex < skillSlides.length - 1) {
+          currentIndex++;
+        } else {
+          currentIndex = 0; // Volver al inicio si llega al final
+        }
+        updateCarouselPosition();
+        updateDots();
+      }
+      
+      // Navegar al slide anterior
+      function prevSlide() {
+        if (currentIndex > 0) {
+          currentIndex--;
+        } else {
+          currentIndex = skillSlides.length - 1; // Ir al final si está en el inicio
+        }
+        updateCarouselPosition();
+        updateDots();
+      }
+      
+      // Actualizar la posición del carrusel
+      function updateCarouselPosition() {
+        const slideWidth = carousel.clientWidth;
+        const scrollPosition = currentIndex * slideWidth;
+        carousel.scrollTo({
+          left: scrollPosition,
+          behavior: 'smooth'
+        });
+      }
+      
+      // Iniciar autoslide
+      function startAutoSlide() {
+        autoSlideInterval = setInterval(() => {
+          nextSlide();
+        }, 7000); // Cambiar cada 7 segundos
+      }
+      
+      // Detener autoslide
+      function stopAutoSlide() {
+        clearInterval(autoSlideInterval);
+      }
+      
+      // Reiniciar autoslide después de una interacción
+      function resetAutoSlide() {
+        stopAutoSlide();
+        startAutoSlide();
+      }
+      
+      // Eventos de los botones de navegación
+      if (prevArrow && nextArrow) {
+        prevArrow.addEventListener('click', () => {
+          prevSlide();
+          resetAutoSlide();
+        });
+        
+        nextArrow.addEventListener('click', () => {
+          nextSlide();
+          resetAutoSlide();
+        });
+      }
+      
+      // Control táctil para móviles
+      let touchStartX = 0;
+      let touchEndX = 0;
+      
+      carousel.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        stopAutoSlide();
+      }, { passive: true });
+      
+      carousel.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+        startAutoSlide();
+      }, { passive: true });
+      
+      function handleSwipe() {
+        const minSwipeDistance = 50;
+        if (touchStartX - touchEndX > minSwipeDistance) {
+          // Deslizamiento a la izquierda
+          nextSlide();
+        } else if (touchEndX - touchStartX > minSwipeDistance) {
+          // Deslizamiento a la derecha
+          prevSlide();
+        }
+      }
+      
+      // Eventos de interacción con el carrusel
+      carousel.addEventListener('mouseenter', stopAutoSlide);
+      carousel.addEventListener('mouseleave', startAutoSlide);
+      
+      // Manejar redimensionamiento de ventana
+      window.addEventListener('resize', () => {
+        updateCarouselPosition();
+      });
+      
+      // Inicializar componentes
+      createDots();
+      updateDots();
+      startAutoSlide();
+      
+      // Ajustar el tamaño inicial en caso de carga asíncrona de imágenes
+      window.addEventListener('load', () => {
+        updateCarouselPosition();
+      });
+    });
+
+    // Detectar cuando los carruseles son visibles en viewport
+    const observer = new IntersectionObserver((entries) => {
+      const carouselContainer = entries[0].target.querySelector('.carousel-container');
+      if (entries[0].isIntersecting && carouselContainer) {
+        const event = new Event('mouseenter');
+        carouselContainer.querySelector('.skills-carousel').dispatchEvent(event);
+      } else if (carouselContainer) {
+        const event = new Event('mouseleave');
+        carouselContainer.querySelector('.skills-carousel').dispatchEvent(event);
+      }
+    }, { threshold: 0.3 });
+    
+    observer.observe(document.querySelector('.habilidades'));
+  });
+  </script>
+
+</body>
+<!-- 
+   __       _                   _         
+  / / _   _| | ____ _ ___  __ _| | _____  
+ / / | | | | |/ / _` / __|/ _` | |/ / _ \ 
+/ /__| |_| |   < (_| \__ \ (_| |   < (_) |  github.com/lukasako
+\____/\__,_|_|\_\__,_|___/\__,_|_|\_\___/ 
+                                                                                                          
+-->
+</html>
+
