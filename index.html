@@ -45,7 +45,7 @@
 
 
   <!-- comienzan las secciones -->
-    <div data-bs-spy="scroll" data-bs-target="#navbar-body" data-bs-offset="80" tabindex="0"  style="position: relative;">
+    <div data-bs-spy="scroll" id="top" data-bs-target="#navbar-body" data-bs-offset="80" tabindex="0"  style="position: relative;">
       
       <!-- Inicio -->
       <section id="scrollspyInicio" class="scrollspy-section seccion-inicio d-flex align-items-center justify-content-center">
@@ -61,16 +61,14 @@
           <div class="texto">
           <h2 class="LucasMorales fw-bold">Lucas Morales</h2>
           </div>
-          <h3 class="titulo"><span class="typed"></span></h3>
-          <a href="mailto:lucasmoralesar@gmail.com" class="btn btn-dark btn-hover" style="margin-top: 20%;">
-            Contacto
-          </a>
+          <h3 class="titulo principal"><span class="typed"></span></h3>
+          <a href="mailto:lucasmoralesar@gmail.com" class="botonazo">Contacto</a>
         </div>
       </section>
 
       
       <!-- Sobre mi -->
-      <section id="scrollspySobremi" class="scrollspy-section sobre-mi py-5">
+      <section id="scrollspySobremi" class="scrollspy-section sobre-mi pt-5">
         <div class="row align-items-center">
           <!-- Foto personal -->
           <div class="col-md-4 text-center mb-4 mb-md-0">
@@ -386,7 +384,7 @@
 
 
       <!-- Experiencia -->
-      <section id="scrollspyExperiencia" class="scrollspy-section experiencia py-5">
+      <section id="scrollspyExperiencia" class="scrollspy-section experiencia py-3">
         <div class="container">
           <div class="row mb-5">
             <div class="col-12 text-center">
@@ -624,9 +622,171 @@
 
       <!-- Formacion -->
       <section id="scrollspyFormacion" class="scrollspy-section">
-        Formación
+          <div class="container">
+              <div class="section-header">
+                  <h2 class="display-4 titulos">Formación Académica</h2>
+                  <p class="section-subtitle">Mi trayectoria educativa y desarrollo profesional</p>
+              </div>
+              
+              <div class="timeline-container">
+                  <div class="timeline-line"></div>
+                  
+                  <!-- Ejemplo de formaciones -->
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-content">
+                          <div class="timeline-date">2023 - Presente</div>
+                          <h3 class="course-name">Analista de Sistemas</h3>
+                          <h4 class="institution">Escuela Da Vinci</h4>
+                          <p class="course-description">Enfoque en el conocimiento en tecnologías de programación y bases de datos modernas, orientados a las necesidades del mercado y de las empresas. Trabajando con distintos tipos de software, centrado en la calidad y seguridad informática, y estrategias de análisis y diseño de proyectos</p>
+                          <div class="course-tags">
+                              <span class="tag">Java</span>
+                              <span class="tag">OOP</span>
+                              <span class="tag">Analisis</span>
+                              <span class="tag">Desarrollo Web</span>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-content">
+                          <div class="timeline-date">2024</div>
+                          <h3 class="course-name">Técnico en reparación de pc y notebook</h3>
+                          <h4 class="institution">Instituto Argentino de Computación</h4>
+                          <p class="course-description">Armado y asistencia técnica de una PC y Notebook, aprendizaje en hardware y software. Asesoría de clientes en base a presupuesto</p>
+                          <div class="course-tags">
+                              <span class="tag">Windows</span>
+                              <span class="tag">Linux</span>
+                              <span class="tag">Hardware</span>
+                              <span class="tag">Software</span>
+                              <span class="tag">Asesoría</span>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-content">
+                          <div class="timeline-date">2023</div>
+                          <h3 class="course-name">Certificación en Desarrollo Backend</h3>
+                          <h4 class="institution">UTN e-learning</h4>
+                          <p class="course-description">Desarrollo de backend de aplicaciones web, basado en una maquetación simple con Wordpress y generación de lógica con PHP y JS, conectado a una base de datos MySQL donde se consultan datos</p>
+                          <div class="course-tags">
+                              <span class="tag">PHP</span>
+                              <span class="tag">Javascript</span>
+                              <span class="tag">React JS</span>
+                              <span class="tag">Wordpress</span>
+                              <span class="tag">MySQL</span>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-content">
+                          <div class="timeline-date">2022</div>
+                          <h3 class="course-name">Bases de Python</h3>
+                          <h4 class="institution">Coderhouse</h4>
+                          <p class="course-description">Principios de la programación orientado a objetos, generando la lógica backend de una página web, conectado a una base de datos MySQL</p>
+                          <div class="course-tags">
+                              <span class="tag">Python</span>
+                              <span class="tag">OOP</span>
+                              <span class="tag">Django</span>
+                              <span class="tag">HTML</span>
+                              <span class="tag">CSS</span>
+                              <span class="tag">MySQL</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- Estadísticas de formación -->
+              <div class="education-stats">
+                  <div class="stat-item">
+                    <a href="https://www.linkedin.com/in/lucas-morales-in/details/certifications/">
+                      <div class="stat-number" data-count="4">7</div>
+                      <div class="stat-label">Certificaciones</div>
+                    </a>
+                  </div>
+                  <div class="stat-item">
+                      <div class="stat-number" data-count="15">5</div>
+                      <div class="stat-label">Proyectos Completados</div>
+                  </div>
+              </div>
+          </div>
       </section>
 
+
+      <footer class="main-footer">
+        <div class="footer-content">
+            <div class="container">
+                <!-- Sección principal del footer -->
+                <div class="footer-main">
+                    <div class="footer-section footer-brand">
+                        <div class="brand-logo">
+                            <h3 class="display-4">Lucas Morales</h3>
+                            <div class="brand-tagline">Preparándome para lo que viene</div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/lucas-morales-in/" class="social-link" aria-label="LinkedIn">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/lukasako" class="social-link" aria-label="GitHub">
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </div>
+                      </div>
+
+                    <div class="footer-section footer-contact">
+                        <h4>Contacto</h4>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <span>Buenos Aires, Argentina</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="bi bi-envelope-at-fill"></i>
+                                <a href="mailto:lucasmoralesar@gmail.com" style="text-decoration: none; color: white;"><span>lucasmoralesar@gmail.com</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Separador -->
+                <div class="footer-divider"></div>
+                
+                <!-- Sección inferior del footer -->
+                <div class="footer-bottom">
+                    <div class="footer-bottom-left">
+                        <p>&copy; 2025 Lucas Morales. Todos los derechos reservados.</p>
+                    </div>
+                    
+                    <div class="footer-bottom-right">
+                        <a  style="text-decoration: none;" href="#top" class="back-to-top" id="backToTop" aria-label="Volver arriba">
+                            <i class="bi bi-arrow-up-circle"></i>
+                            <span>Volver arriba</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Ondas decorativas -->
+        <div class="footer-waves">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="m-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(188, 234, 102, 0.7)"/>
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(129, 162, 75, 0.5)"/>
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(188, 234, 102, 0.3)"/>
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(255, 255, 255, 0.1)"/>
+                </g>
+            </svg>
+        </div>
+      </footer>
 
     </div>
 
@@ -890,7 +1050,7 @@
     observer.observe(document.querySelector('.habilidades'));
   });
   </script>
-
+  
 </body>
 <!-- 
    __       _                   _         
