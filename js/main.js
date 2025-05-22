@@ -35,3 +35,50 @@ window.addEventListener('scroll', () => {
 	  fondo.style.transform = `translateY(${desplazamiento}px)`;
 	}
 });
+
+// JavaScript para la sección de experiencia
+document.addEventListener('DOMContentLoaded', function() {
+  // Configuración de animaciones al hacer scroll para las tarjetas de experiencia
+  const experienceCards = document.querySelectorAll('.exp-card');
+  
+  // Función para verificar si un elemento está visible en el viewport
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+  
+  // Función para manejar la animación de aparición
+  function handleScrollAnimation() {
+    experienceCards.forEach((card, index) => {
+      if (isElementInViewport(card)) {
+        // Agregamos un pequeño retraso para que aparezcan secuencialmente
+        setTimeout(() => {
+          card.classList.add('animate-fade-in');
+        }, index * 150);
+      }
+    });
+  }
+  
+  // Inicializar animación al cargar
+  setTimeout(handleScrollAnimation, 300);
+  
+  // Evento scroll para activar animaciones
+  window.addEventListener('scroll', handleScrollAnimation);
+  
+  // Manejo de comportamiento táctil para dispositivos móviles
+  if ('ontouchstart' in window) {
+    experienceCards.forEach(card => {
+      card.addEventListener('touchstart', function() {
+        // En dispositivos táctiles, alternamos la clase para girar la tarjeta
+        this.querySelector('.exp-card-inner').classList.toggle('touch-flip');
+      });
+    });
+  }
+});
+
+

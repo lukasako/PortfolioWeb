@@ -399,3 +399,254 @@ body {
         min-height: 270px;
       }
     }
+
+/* Seccion experiencia */
+/* Estilos para la sección de experiencia */
+
+/* Sección principal */
+.experiencia {
+  background-color: #121212;
+  padding: 100px 0;
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* Tarjetas de experiencia */
+.exp-card {
+  background-color: transparent;
+  perspective: 1000px;
+  height: 400px;
+  width: auto;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.exp-card:hover {
+  transform: translateY(-5px);
+}
+
+.exp-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+}
+
+.exp-card:hover .exp-card-inner {
+  transform: rotateY(180deg);
+}
+
+.exp-card-front, .exp-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.exp-card-front {
+  background-color: #1a1e22;
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-card-back {
+  background-color: #212529;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Contenedor de imagen */
+.exp-img-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.exp-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.exp-card:hover .exp-img {
+  transform: scale(1.05);
+}
+
+/* Contenido de la tarjeta */
+.exp-card-body {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: linear-gradient(to bottom, #1a1e22, #121517);
+}
+
+.exp-card-title {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.exp-card-company {
+  font-size: 1.2rem;
+  color: #adb5bd;
+  margin-bottom: 10px;
+}
+
+.exp-card-date {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+.exp-card-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #d1d1d1;
+  margin-bottom: 20px;
+}
+
+/* Etiquetas de habilidades */
+.exp-card-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.exp-skill-tag {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #9ad0f5;
+  transition: all 0.3s ease;
+}
+
+.exp-skill-tag:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* Efecto de brillante en hover */
+.exp-card-inner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.exp-card:hover .exp-card-inner::before {
+  left: 100%;
+}
+
+/* Ajustes Responsive */
+@media (max-width: 992px) {
+  .exp-card {
+    height: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .exp-card {
+    height: 450px;
+  }
+  
+  .experiencia {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .exp-card {
+    height: 400px;
+  }
+  
+  .exp-card-title {
+    font-size: 1.3rem;
+  }
+  
+  .exp-card-company {
+    font-size: 1.1rem;
+  }
+  
+  .exp-card-description {
+    font-size: 0.9rem;
+  }
+}
+/* Animación de aparición para tarjetas */
+.exp-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.exp-card.animate-fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Manejo de flip con touch para móviles */
+.exp-card-inner.touch-flip {
+  transform: rotateY(180deg);
+}
+
+/* Animación para los tags de habilidades */
+@keyframes tagPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.exp-skill-tag:hover {
+  animation: tagPulse 1s infinite;
+}
+
+/* Efecto de resaltado para títulos de la sección */
+.titulos {
+  position: relative;
+  display: inline-block;
+}
+
+.titulos::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #537895, #09203f);
+  transition: width 0.8s ease, left 0.8s ease;
+}
+
+.titulos:hover::after {
+  width: 100%;
+  left: 0;
+}
