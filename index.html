@@ -69,7 +69,7 @@
       
       <!-- Sobre mi -->
       <section id="scrollspySobremi" class="scrollspy-section sobre-mi pt-5">
-        <div class="row align-items-center">
+        <div class="row align-items-center contenido-sobremi">
           <!-- Foto personal -->
           <div class="col-md-4 text-center mb-4 mb-md-0">
             <img src="assets/pf.jpg" alt="Foto de Lucas Morales" class="img-fluid rounded shadow img-perfil">
@@ -121,7 +121,7 @@
 
       <!-- Habilidades -->
       <section id="scrollspyHabilidades" class="scrollspy-section habilidades">
-        <div class="container">
+        <div class="container habilidades-contenido">
           <div class="row mb-3">
             <div class="col-12 text-center">
               <h2 class="display-4 titulos">Habilidades</h2>
@@ -469,6 +469,43 @@
               </div>
             </div>
 
+            <!-- Carta de Experiencia 6 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="exp-card">
+                <div class="exp-card-inner">
+                  <!-- Frente de la carta -->
+                  <div class="exp-card-front">
+                    <div class="exp-img-container">
+                      <img src="assets/XP/NoteApp.png" alt="Empresa 6" class="img-fluid exp-img">
+                    </div>
+                    <div class="exp-card-body">
+                      <h3 class="exp-card-title">Desarrollo Full Stack</h3>
+                      <h4 class="exp-card-company">Proyecto Personal</h4>
+                      <p class="exp-card-date">Mayo 2025</p>
+                    </div>
+                  </div>
+                  <!-- Reverso de la carta -->
+                  <div class="exp-card-back">
+                    <div class="exp-card-content">
+                      <h3 class="exp-card-title">Desarrollo Full Stack</h3>
+                      <p class="exp-card-description">
+                        Desarrollo de aplicación web para guardar notas. Relizado con Java y React. Centrado en la lógica backend de las notas y filtrado por categorias.
+                      </p>
+                      <div class="exp-card-skills">
+                        <span class="exp-skill-tag">Web Design</span>
+                        <span class="exp-skill-tag">SpringBoot</span>
+                        <span class="exp-skill-tag">HTML</span>
+                        <span class="exp-skill-tag">REACT</span>
+                        <span class="exp-skill-tag">CSS</span>
+                        <span class="exp-skill-tag">SQL</span>
+                        <span class="exp-skill-tag">JAVA</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!-- Carta de Experiencia 3 -->
             <div class="col-md-6 col-lg-4 mb-4">
               <div class="exp-card">
@@ -481,7 +518,7 @@
                     <div class="exp-card-body">
                       <h3 class="exp-card-title">Admin. Base de datos</h3>
                       <h4 class="exp-card-company">NAC Portal</h4>
-                      <p class="exp-card-date">Abril 2021 - Presente</p>
+                      <p class="exp-card-date">2021 - 2023</p>
                     </div>
                   </div>
                   <!-- Reverso de la carta -->
@@ -515,8 +552,8 @@
                       <img src="assets/XP/clubi.png" alt="Empresa 4" class="img-fluid exp-img">
                     </div>
                     <div class="exp-card-body">
-                      <h3 class="exp-card-title">Desarollador Frontend</h3>
-                      <h4 class="exp-card-company">Clubi App</h4>
+                      <h3 class="exp-card-title">Desarollo Frontend</h3>
+                      <h4 class="exp-card-company">Proyecto personal</h4>
                       <p class="exp-card-date">Diciembre 2024 - Abril 2025</p>
                     </div>
                   </div>
@@ -577,44 +614,6 @@
                 </div>
               </div>
             </div>
-
-            <!-- Carta de Experiencia 6 -->
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="exp-card">
-                <div class="exp-card-inner">
-                  <!-- Frente de la carta -->
-                  <div class="exp-card-front">
-                    <div class="exp-img-container">
-                      <img src="assets/XP/Lgram.jpg" alt="Empresa 6" class="img-fluid exp-img">
-                    </div>
-                    <div class="exp-card-body">
-                      <h3 class="exp-card-title">Desarrollador Full Stack</h3>
-                      <h4 class="exp-card-company">Proyecto Personal</h4>
-                      <p class="exp-card-date">Enero 2022</p>
-                    </div>
-                  </div>
-                  <!-- Reverso de la carta -->
-                  <div class="exp-card-back">
-                    <div class="exp-card-content">
-                      <h3 class="exp-card-title">Desarrollo Full Stack</h3>
-                      <p class="exp-card-description">
-                        Desarrollo de aplicación web estilo blog con fines educativos. Relizado con Python y Django; contiene funciones de registro, login, 
-                        posteos y comentarios. CRUD sobre posteos y usuarios. Centrado en la lógica backend.
-                      </p>
-                      <div class="exp-card-skills">
-                        <span class="exp-skill-tag">Web Design</span>
-                        <span class="exp-skill-tag">HTML</span>
-                        <span class="exp-skill-tag">Python</span>
-                        <span class="exp-skill-tag">Django</span>
-                        <span class="exp-skill-tag">SQL</span>
-                        <span class="exp-skill-tag">UI/UX</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
         </div>
       </section>
@@ -704,14 +703,10 @@
               <!-- Estadísticas de formación -->
               <div class="education-stats">
                   <div class="stat-item">
-                    <a href="https://www.linkedin.com/in/lucas-morales-in/details/certifications/">
-                      <div class="stat-number" data-count="4">7</div>
+                    <a style="text-decoration: none;" href="https://www.linkedin.com/in/lucas-morales-in/details/certifications/">
+                      <div class="stat-number" data-count="7">7</div>
                       <div class="stat-label">Certificaciones</div>
                     </a>
-                  </div>
-                  <div class="stat-item">
-                      <div class="stat-number" data-count="15">5</div>
-                      <div class="stat-label">Proyectos Completados</div>
                   </div>
               </div>
           </div>
@@ -726,7 +721,7 @@
                     <div class="footer-section footer-brand">
                         <div class="brand-logo">
                             <h3 class="display-4">Lucas Morales</h3>
-                            <div class="brand-tagline">Preparándome para lo que viene</div>
+                            <div class="brand-tagline">©2025 Lucas Morales. Todos los derechos reservados.</div>
                         </div>
                         <div class="social-links">
                             <a href="https://www.linkedin.com/in/lucas-morales-in/" class="social-link" aria-label="LinkedIn">
@@ -736,32 +731,9 @@
                                 <i class="bi bi-github"></i>
                             </a>
                         </div>
-                      </div>
-
-                    <div class="footer-section footer-contact">
-                        <h4>Contacto</h4>
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <i class="bi bi-geo-alt-fill"></i>
-                                <span>Buenos Aires, Argentina</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="bi bi-envelope-at-fill"></i>
-                                <a href="mailto:lucasmoralesar@gmail.com" style="text-decoration: none; color: white;"><span>lucasmoralesar@gmail.com</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Separador -->
-                <div class="footer-divider"></div>
-                
+                      </div>                
                 <!-- Sección inferior del footer -->
                 <div class="footer-bottom">
-                    <div class="footer-bottom-left">
-                        <p>&copy; 2025 Lucas Morales. Todos los derechos reservados.</p>
-                    </div>
-                    
                     <div class="footer-bottom-right">
                         <a  style="text-decoration: none;" href="#top" class="back-to-top" id="backToTop" aria-label="Volver arriba">
                             <i class="bi bi-arrow-up-circle"></i>
@@ -780,9 +752,9 @@
                 </defs>
                 <g class="parallax">
                     <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(188, 234, 102, 0.7)"/>
-                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(129, 162, 75, 0.5)"/>
-                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(188, 234, 102, 0.3)"/>
-                    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(255, 255, 255, 0.1)"/>
+                    <use xlink:href="#gentle-wave" x="48" y="2" fill="rgba(129, 162, 75, 0.5)"/>
+                    <use xlink:href="#gentle-wave" x="48" y="4" fill="rgba(188, 234, 102, 0.3)"/>
+                    <use xlink:href="#gentle-wave" x="48" y="6" fill="rgba(255, 255, 255, 0.1)"/>
                 </g>
             </svg>
         </div>
