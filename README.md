@@ -15,7 +15,7 @@ CSS3: Para dar estilo y asegurar una experiencia visual atractiva y responsiva e
 
 JavaScript: Para la interactividad, animaciones y funcionalidades dinámicas que mejoran la experiencia del usuario.
 
-[Visitar portfolio]([url](https://lukasako.github.io/PortfolioWeb/))
+[Visitar portfolio]((https://lukasako.github.io/PortfolioWeb/))
 
 Espero que te guste!
 ![image](https://github.com/user-attachments/assets/4bb87c04-4cbb-419c-be8d-80cdcf562d55)
